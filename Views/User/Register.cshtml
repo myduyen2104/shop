@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Users/Register.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="~/assets/css/register.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-box">
+        <div class="signup-header">
+            <header>Sign Up</header>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Name" autocomplete="off" required>
+            <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+            <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+        </div>
+        <div class="input-submit">
+            <button class="submit-button" id="submit"></button>
+            <label for="submit">Sign Up</label>
+        </div>
+    </div>
+</body>
+</html>

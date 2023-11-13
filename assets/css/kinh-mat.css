@@ -1,0 +1,142 @@
+﻿.product-category {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.filter-col {
+    width: 200px;
+    margin-left: -70px;
+}
+
+.filter-form {
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.options label {
+    display: block;
+    padding-top: 10px;
+}
+
+label:hover {
+    background-color: #eee;
+}
+
+.sold-out-sticky {
+    display: block;
+    position: absolute;
+    background: #888;
+    color: #fff;
+    padding: 0.1em 0.4em;
+    margin-top: -26px;
+}
+
+.products-col {
+    flex: 1;
+}
+
+.product-thumbnail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+}
+
+    .image img {
+        height: 100%;
+    }
+
+.name {
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.price {
+    font-size: 14px;
+    color: #ffb86c;
+    text-align: center;
+    margin-top: 5px;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    width: 1000px;
+}
+
+.prev-disabled {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.pagination li {
+    margin: 2px;
+    list-style: none;
+    border: solid 1px;
+    border-top-color: #ddd;
+    border-bottom-color: #ddd;
+    border-left-color: #ddd;
+    border-right-color: #ddd;
+}
+
+    .pagination li.active a {
+        color: #000000;
+        text-decoration: none;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        border: 1px solid #F7B223;
+        background: #F7B223;
+        color: #fff;
+    }
+
+.page {
+    color: #333;
+    text-decoration: none;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+    .page:hover {
+        border: 1px solid #F7B223;
+    }
+
+.next {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+    .next:hover {
+        border: 1px solid #F7B223;
+    }
+
+/*in đậm chữ Sắp xếp theo*/
+.filter-col .group.active h4.name {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, Arial, sans-serif;
+}

@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Purists Club</title>
+    <link href="~/assets/css/shop.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="inner">
+                    <button type="button" class="open-search" onclick="popupsearch()">
+                        <img id="search" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpcdeLHYURvE2Tmzkw0OyHBZ99XYrjLx4HG-tx7-tomLRi4SlB"><br />
+
+                    </button>
+
+                    <div class="shopping-cart">
+                        <img id="cart" src="data:image/png;base64,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"><br />
+                        <div class="dropdown">
+                            <a class="link-to-cart" href="shopping-cart.html" title="shopping-cart">Xem giỏ hàng</a>
+                        </div>
+                    </div>
+
+                    <a class="user" href="~/Views/User/Login.cshtml">
+                        <img id="user-avartar" src="https://img.upanh.tv/2023/11/04/user-removebg-preview.png" /> <br />
+                    </a>
+
+                    <a class="header-logo">
+                        <img id="logo" src="https://asset.brandfetch.io/id3bWjkfk8/idKy4qkXbH.png" /><br />
+                    </a>
+                </div>
+            </div>
+
+            <div class="container" id="top-nav">
+                <div class="inner">
+                    <div class="menu-toggle">
+                        <ul class="menu">
+                            <li class="menu-item" style="list-style-type: none; text-decoration: none; color: black; font-weight: bold"  >
+                                @Html.ActionLink("TRANG CHỦ", "Index", "Home")
+                            </li>
+                            <li style="list-style-type: none; text-decoration: none; color: black">
+                                @Html.ActionLink("BLOG", "_Layout.cshtml", "_Layout.cshtml")
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="tin-tuc">Tin Tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="thuong-hieu">Thương Hiệu</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li style="list-style-type: none; text-decoration: none; color: black">
+                                @Html.ActionLink("KÍNH MẮT", "_Layout.cshtml", "_Layout.cshtml")
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="maybach-eyewear">Maybach Eyewear</a>
+                                    </li>
+                                    <li>
+                                        <a href="jacques-marie-mage">Jacques Marie Mage</a>
+                                    </li>
+                                    <li>
+                                        <a href="chrome-hearts">Chrome Hearts</a>
+                                    </li>
+                                    <li>
+                                        <a href="kuboraum">Kuboraum</a>
+                                    </li>
+                                    <li>
+                                        <a href="masunaga">Masunaga 1905</a>
+                                    </li>
+                                    <li>
+                                        <a href="rigards">Rigards</a>
+                                    </li>
+                                    <li>
+                                        <a href="theo-eyewear">THEO Eyewear</a>
+                                    </li>
+                                    <li>
+                                        <a href="matsuda">Matsuda</a>
+                                    </li>
+                                    <li>
+                                        <a href="factory900">Factory900</a>
+                                    </li>
+                                    <li>
+                                        <a href="tavat">Tavat</a>
+                                    </li>
+                                    <li>
+                                        <a href="kame-mannen">Kame Mannen</a>
+                                    </li>
+                                    <li>
+                                        <a href="hapter">Hapter</a>
+                                    </li>
+                                    <li>
+                                        <a href="utler-and-gross">Cutler & Gross</a>
+                                    </li>
+                                    <li>
+                                        <a href="bj-classic">BJ Classic</a>
+                                    </li>
+                                    <li>
+                                        <a href="moscot">Moscot</a>
+                                    </li>
+                                    <li>
+                                        <a href="eyevan">Eyevan</a>
+                                    </li>
+                                    <li>
+                                        <a href="masahiro-maruyama">Masahiro Maruyama</a>
+                                    </li>
+                                    <li>
+                                        <a href="oliver-peoples">Oliver Peoples</a>
+                                    </li>
+                                    <li>
+                                        <a href="haffmans-and-neumeister">Haffmans & Neumeister</a>
+                                    </li>
+                                    <li>
+                                        <a href="the-bespoke-dudes">The Bespoke Dudes</a>
+                                    </li>
+                                    <li>
+                                        <a href="moonglass">Moonglass</a>
+                                    </li>
+                                    <li>
+                                        <a href="tom-ford">Tom Ford</a>
+                                    </li>
+                                    <li>
+                                        <a href="montblanc">Montblanc</a>
+                                    </li>
+                                    <li>
+                                        <a href="lapima">Lapima</a>
+                                    </li>
+                                    <li>
+                                        <a href="a-bathing-ape">A Bathing Ape</a>
+                                    </li>
+                                    <li>
+                                        <a href="david-beckham">David Beckham</a>
+                                    </li>
+                                    <li>
+                                        <a href="dita">Dita</a>
+                                    </li>
+                                    <li>
+                                        <a href="thom-browne">Thom Browne</a>
+                                    </li>
+                                    <li>
+                                        <a href="mykita">Mykita</a>
+                                    </li>
+                                    <li>
+                                        <a href="izipizi-paris">Izipizi Paris</a>
+                                    </li>
+                                    <li>
+                                        <a href="komorebi">Komorebi</a>
+                                    </li>
+                                    <li>
+                                        <a href="thuong-hieu-khac">Thương Hiệu Khác</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer class="ft-container">
+        <div class="inner">
+            <div class="content">
+                <div class="ft-row">
+                    <div class="ft-col-logo">
+                        <a class="ft-logo" href="shop.html" title="The Purists Club">
+                            <img id="logo" src="https://asset.brandfetch.io/id3bWjkfk8/idKy4qkXbH.png" /><br />
+                        </a>
+
+                        <div class="socials">
+                            <a id="sc" href="https://www.facebook.com/thepuristsclub">
+                                <i class="icon facebook-icon">
+                                    <img id="ft-icon" src="https://img.upanh.tv/2023/10/06/facebook.png" alt="facebook.png" title="Facebook" /><br />
+                                </i>
+                            </a>
+
+                            <a id="sc" href="https://www.instagram.com/thepuristsclub/">
+                                <i class="icon instagram-icon">
+                                    <img id="ft-icon" src="https://img.upanh.tv/2023/10/06/instagram.png" alt="instagram.png" title="Instagram" /><br />
+                                </i>
+                            </a>
+
+                            <a id="sc" href="https://www.youtube.com/channel/UCzk8lGlesMQz1d9getNNxxw/">
+                                <i class="icon youtube-icon">
+                                    <img id="ft-icon" src="https://img.upanh.tv/2023/10/06/youtube.png" alt="youtube.png" title="Youtube" /><br />
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="ft-col">
+                        <h3 class="title" style="margin-top: 17px;">GIỚI THIỆU</h3>
+
+                        <ul class="link">
+                            <li>
+                                <a href="ve-chung-toi" style="text-decoration: none; padding: 0.1rem;" title="Về Chúng Tôi">
+                                    Về Chúng Tôi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ft-col">
+                        <h3 class="title" style="margin-top: 17px;">HỖ TRỢ</h3>
+
+                        <ul class="link">
+                            <li>
+                                <a id="link-title" href="hoi-dap" style="text-decoration: none; padding: 0.1rem;" title="Hỏi Đáp">
+                                    Hỏi Đáp
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ft-col">
+                        <h3 class="title" style="margin-top: 17px;">LIÊN HỆ</h3>
+
+                        <ul class="link">
+                            <li>
+                                Hotline:
+                                <a id="link-tel" href="tel:+84978950312" style="text-decoration: none">+84978950312</a>
+                                ,
+                                <a id="link-tel" href="tel:+84977705665" style="text-decoration: none" z>+84977705665</a>
+                            </li>
+
+                            <li>
+                                Email:
+                                <a id="link-email" href="mailo:info@thepuristsclub.com" style="text-decoration: none">info@thepuristsclub.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright"> Copyright 2023 </div>
+
+                <div class="company"> The Purists Club </div>
+
+                <div class="address">
+                    <div id="address">
+                        Địa chỉ 1: 29 Tô Hiến Thành, Quận Hai Bà Trưng, TP. Hà Nội
+                    </div>
+                    <div id="address">
+                        Địa chỉ 2: 37 Xuân Thủy, Thảo Điền, Quận 2, TP. Hồ Chí Minh
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
