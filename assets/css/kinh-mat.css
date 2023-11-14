@@ -127,6 +127,15 @@ ul.pagination {
     padding-right: 0.6rem;
 }
 
+.add-to-cart {
+    width: 100%; /* Nút +Add chiếm toàn bộ chiều rộng của sản phẩm */
+    padding: 10px;
+    background-color: #f1df11;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+}
+
     .next:hover {
         border: 1px solid #F7B223;
     }
@@ -140,3 +149,150 @@ ul.pagination {
     border-bottom: 1px solid #eee;
     font-family: Roboto, Arial, sans-serif;
 }
+
+/*in đậm chữ Sắp xếp theo*/
+.filter-col .group.active h4.name {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.products-col button {
+    margin-top: 94px;
+    height: -19px;
+    right: 0px;
+    background-color: #f1df11;
+    padding: 8px 25px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .products-col button:hover {
+        background-color: red;
+    }
+
+
+
+
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+    .cart h3 {
+        margin-bottom: 200px;
+    }
+
+    .cart table {
+        width: 100%;
+    }
+
+        .cart table thead tr th:first-child {
+            text-align: left;
+        }
+
+        .cart table tr td {
+            border-bottom: 2px solid #ddd;
+            padding: 1px;
+        }
+
+        .cart table tbody tr td:first-child img {
+            max-width: 150px; /* Đặt kích thước tối đa cho hình ảnh */
+            max-height: 150px; /* Đặt kích thước tối đa cho hình ảnh */
+        }
+
+        .cart table tbody tr td:last-child {
+            text-align: right;
+            cursor: pointer;
+        }
+
+            .cart table tbody tr td:last-child:hover {
+                color: red; /* Đổi màu chữ thành đỏ khi di chuột qua */
+                transition: color 0.1s ease; /* Thêm hiệu ứng chuyển đổi màu chữ trong 0.3 giây */
+            }
+
+        .cart table tbody tr.fade-out {
+            animation: fadeOut 0.5s ease forwards;
+        }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*-------------------------------------------------*/
+.cart {
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    background-color: blanchedalmond;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    transition: 0.3s;
+}
+
+.shopping-cart-icon {
+    /* Thiết lập vị trí của icon giỏ hàng */
+
+    right: 40px;
+    top: 39px;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+}
+
+.cart-overlay {
+    /* Ẩn overlay ban đầu */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.close-cart {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+}
+
+.checkout-btn {
+    background-color: orangered;
+    margin-top: 450px;
+    right: 340px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+    .checkout-btn:hover {
+        background-color: whitesmoke; /* Màu nền của nút thanh toán khi di chuột qua */
+    }

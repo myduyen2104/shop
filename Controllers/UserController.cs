@@ -18,6 +18,10 @@ namespace shopmatkinh.Controllers
         {
             return View();
         }
-
+        
+        public ActionResult Forgotpass() 
+        {
+            return View();
+        }
     }
 }

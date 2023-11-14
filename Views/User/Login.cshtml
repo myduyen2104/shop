@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Login";
-    Layout = "~/Views/Users/Login.cshtml";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@
                 <label for="check">Remember me</label>
             </section>
             <section>
-                <a href="forgotpass.html">Forgot Password</a>
+                <a href="~/User/Forgotpass">Forgot Password</a>
             </section>
         </div>
         <div class="input-submit">
@@ -36,7 +36,7 @@
             <label for="submit">Sign In</label>
         </div>
         <div class="signup">
-            <p>Don't have account? <a href="signup.html">Sign Up</a></p>
+            <p>Don't have account? <a href="~/User/Register">Sign Up</a></p>
         </div>
     </div>
 </body>

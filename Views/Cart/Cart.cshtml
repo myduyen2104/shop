@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Purists Club</title>
-    <link href="~/assets/css/shop.css" rel="stylesheet" />
-</head>
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = null;
+}
+
+<link href="~/assets/css/shop.css" rel="stylesheet"/>
+<link href="~/assets/css/cart.css" rel="stylesheet"/>
 <body>
     <div class="header">
         <div class="overlay">
@@ -37,8 +37,8 @@
                 <div class="inner">
                     <div class="menu-toggle">
                         <ul class="menu">
-                            <li class="menu-item" style="list-style-type: none; text-decoration: none; color: black;"  >
-                                @Html.ActionLink("TRANG CHỦ", "Index", "Home" ) 
+                            <li class="menu-item" style="list-style-type: none; text-decoration: none; color: black;">
+                                @Html.ActionLink("TRANG CHỦ", "Index", "Home")
                             </li>
                             <li style="list-style-type: none; text-decoration: none; color: black">
                                 @Html.ActionLink("BLOG", "Blog", "News")
@@ -160,7 +160,17 @@
         </div>
     </div>
 
-    @RenderBody()
+    <div class="container">
+        <div class="inner">
+            <div id="shopping-cart-view">
+                <div class="shopping-title">Giỏ hàng của bạn hiện đang trống</div>
+                <div class="table-wrapper">
+                    <table>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="ft-container">
         <div class="inner">
@@ -251,6 +261,6 @@
         </div>
     </footer>
 
-</body>
-</html>
+    <script src="~/js/cart.js"></script>
 
+</body>

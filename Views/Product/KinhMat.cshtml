@@ -1,0 +1,321 @@
+﻿
+@{
+    ViewBag.Title = "KinhMat";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Purists Club</title>
+    <link href="~/assets/css/shop.css" rel="stylesheet" />
+    <link href="~/assets/css/kinh-mat.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="product-category clr">
+                <div class="filter-col">
+                    <form action="" method="get" class="filter-form" id="filter-form">
+                        <div class="groups">
+                            <div class="group active" data-value="[&quot;recently&quot;]" data-old-value="[&quot;recently&quot;]">
+                                <h4 class="name">Sắp xếp theo</h4>
+                                <div class="options">
+                                    <label>
+                                        <input type="radio" name="sort" value="recently" checked="">
+                                        <b></b>
+                                        <span style="color: #FF7E00;">Gần đây</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sort" value="price_up">
+                                        <b></b>
+                                        <span>Giá tăng dần</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sort" value="price_down">
+                                        <b></b>
+                                        <span>Giá giảm dần</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="products-col">
+                    <div class="clr product-thumbnail-list aspect-ratio __3x2">
+                        <a class="item focused" href="kinh1.html" title="Dealan x Yellow Stone col.Brown Bear">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only"
+                                         src="https://thepuristsclub.com/images/202310/dealan-x-yellow-stone-colbrown-bearr-3/dealan-x-yellow-stone-colbrown-bearr-3.jpg"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202310/dealan-x-yellow-stone-colbrown-bearr-3/dealan-x-yellow-stone-colbrown-bearr-3.jpg'"
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202310/dealan-x-yellow-stone-colbrown-bearr-2/dealan-x-yellow-stone-colbrown-bearr-2.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Dealan x Yellow Stone col.Brown Bear">Dealan x Yellow Stone col.Brown Bear</h4>
+                            <div class="price"><span class="price-sale">25.800.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-t3-blue.html" title="Mask T3 Royal Blue " data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/t3-bll-2/t3-bll-2.jpg" alt="Mask T3 Royal Blue "
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202310/t3-bll-3/t3-bll-3.jpg'"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202310/t3-bll-2/t3-bll-2.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask T3 Royal Blue">Mask T3 Royal Blue</h4>
+                            <div class="price"><span class="price-sale">11.480.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-c20-mint.html" title="Mask C20 Mint " data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/c20-mt-3/c20-mt-3.jpg" alt="Mask C20 Mint "
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202310/c20-mt-1/c20-mt-1.jpg'"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202310/c20-mt-3/c20-mt-3.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask C20 Mint">Mask C20 Mint</h4>
+                            <div class="price"><span class="price-sale">10.920.000 VNĐ</span></div>
+                        </a>
+
+
+                        <a class="item" href="https://thepuristsclub.com/mask-z14-silver.html" title="Mask Z14 Silver" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202009/mask-z14-silver-1/mask-z14-silver-1.jpg" alt="Mask Z14 Silver"
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202009/mask-z14-silver/mask-z14-silver.jpg'"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202009/mask-z14-silver-1/mask-z14-silver-1.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask Z14 Silver">Mask Z14 Silver</h4>
+                            <div class="price"><span class="price-sale">13.160.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-p4-tor.html" title="Mask P4 TOR" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202205/p4-tor-50-22-145/p4-tor-50-22-145.jpg" alt="Mask P4 TOR"
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202205/p4-tor-2/p4-tor-2.jpg'"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202205/p4-tor-50-22-145/p4-tor-50-22-145.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask P4 TOR">Mask P4 TOR</h4>
+                            <div class="price"><span class="price-sale">15.400.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-s3-ts.html" title="Mask S3 TS" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202205/s3-tor-50-22-145/s3-tor-50-22-145.jpg" alt="Mask S3 TS"
+                                         onmouseover="this.src='https://thepuristsclub.com/images/202205/mask-s3-tor-1/mask-s3-tor-1.jpg'"
+                                         onmouseout="this.src='https://thepuristsclub.com/images/202205/s3-tor-50-22-145/s3-tor-50-22-145.jpg'">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask S3 TS">Mask S3 TS</h4>
+                            <div class="price"><span class="price-sale">19.040.000 VNĐ</span></div>
+                        </a>
+
+
+                        <a class="item" href="https://thepuristsclub.com/mask-q2-white.html" title="Mask Q2 - White" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202204/q2-wh-3/q2-wh-3.jpg" alt="Mask Q2 - White">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask Q2 - White">Mask Q2 - White</h4>
+                            <div class="price"><span class="price-sale">15.130.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-p2-black-shine-cream.html" title="Mask P2 Black Shine + Cream " data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202011/p2-bpn-50-22-145/p2-bpn-50-22-145.jpg" alt="Mask P2 Black Shine + Cream ">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask P2 Black Shine + Cream">Mask P2 Black Shine + Cream</h4>
+                            <div class="price"><span class="price-sale">15.130.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mask-k5-black-shine.html" title="Mask K5 Black Shine" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/k5-bss-2/k5-bss-2.jpg" alt="Mask K5 Black Shine">
+                                    <span class="sold-out-sticky">SOLD OUT</span>
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="Mask K5 Black Shine">Mask K5 Black Shine</h4>
+                            <div class="price"><span class="price-sale">11.480.000 VNĐ</span></div>
+                        </a>
+
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0011-no-8-black-black.html" title="MM-0011 No.8 Black / Black" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/0011-3/0011-3.jpg" alt="MM-0011 No.8 Black / Black">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0011 No.8 Black / Black">MM-0011 No.8 Black / Black</h4>
+                            <div class="price"><span class="price-sale">19.100.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0052-no-1-black-gold.html" title="MM-0052 No.1 Black - Gold" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/mm-0052-no1-black-gold-1/mm-0052-no1-black-gold-1.jpg" alt="MM-0052 No.1 Black - Gold">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0052 No.1 Black - Gold">MM-0052 No.1 Black - Gold</h4>
+                            <div class="price"><span class="price-sale">17.500.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0030-no-4-navy-navy-silver-gold.html" title="MM-0030 No.4 Navy/Navy-Silver-Gold" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/mm-0030-no4-navynavy-silver-gold-3/mm-0030-no4-navynavy-silver-gold-3.jpg" alt="MM-0030 No.4 Navy/Navy-Silver-Gold">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0030 No.4 Navy/Navy-Silver-Gold">MM-0030 No.4 Navy/Navy-Silver-Gold</h4>
+                            <div class="price"><span class="price-sale">17.500.000 VNĐ</span></div>
+                        </a>
+
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0032-no-2-black-black.html" title="MM-0032 No.2 Black / Black" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/mm-0032-no2-black-black-1/mm-0032-no2-black-black-1.jpg" alt="MM-0032 No.2 Black / Black">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0032 No.2 Black / Black">MM-0032 No.2 Black / Black</h4>
+                            <div class="price"><span class="price-sale">19.500.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0039-no-4-gold-green.html" title="MM-0039 No.4 Gold - Green" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/mm-0039-no-4-gold-green-3/mm-0039-no-4-gold-green-3.jpg" alt="MM-0039 No.4 Gold - Green">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0039 No.4 Gold - Green">MM-0039 No.4 Gold - Green</h4>
+                            <div class="price"><span class="price-sale">17.500.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0061-no-4-bronze-brown.html" title="MM-0061 No.4 Bronze Brown" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/0061-1/0061-1.jpg" alt="MM-0061 No.4 Bronze Brown">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0061 No.4 Bronze Brown">MM-0061 No.4 Bronze Brown</h4>
+                            <div class="price"><span class="price-sale">19.000.000 VNĐ</span></div>
+                        </a>
+
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0073-no-1-clear-black.html" title="MM-0073 No.1 Clear / Black" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/0073-1/0073-1.jpg" alt="MM-0073 No.1 Clear / Black">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0073 No.1 Clear / Black">MM-0073 No.1 Clear / Black</h4>
+                            <div class="price"><span class="price-sale">19.500.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0075-no-1-clear-black.html" title="MM-0075 No.1 Clear / Black" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/0075-1/0075-1.jpg" alt="MM-0075 No.1 Clear / Black">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0075 No.1 Clear / Black">MM-0075 No.1 Clear / Black</h4>
+                            <div class="price"><span class="price-sale">19.500.000 VNĐ</span></div>
+                        </a>
+
+                        <a class="item" href="https://thepuristsclub.com/mm-0079-no-3-clear-gold.html" title="MM-0079 No.3 Clear - Gold" data-focusable="true">
+                            <div class="image">
+                                <button class="add-to-cart">+Add</button>
+                                <span>
+                                    <img class="released-only" src="https://thepuristsclub.com/images/202310/mm-0079-no-3-clear-gold-1/mm-0079-no-3-clear-gold-1.jpg" alt="MM-0079 No.3 Clear - Gold">
+                                </span>
+                            </div>
+                            <h4 class="name" data-max-line-count="2" data-text-to-wrap="MM-0079 No.3 Clear - Gold">MM-0079 No.3 Clear - Gold</h4>
+                            <div class="price"><span class="price-sale">15.500.000 VNĐ</span></div>
+                        </a>
+
+
+                    </div>
+                    <ul class="pagination">
+                        <li class="prev-disabled"><span>«</span></li>
+                        <li class="active"><a href="/page=1" data-page="0">1</a></li>
+                        <li><a class="page" href="/page=2">2</a></li>
+                        <li><a class="page" href="/page=3" data-page="2">3</a></li>
+                        <li><a class="page" href="/page=4" data-page="3">4</a></li>
+                        <li><a class="page" href="/page=5" data-page="4">5</a></li>
+                        <li><a class="page" href="/page=6" data-page="5">6</a></li>
+                        <li><a class="page" href="/page=7" data-page="6">7</a></li>
+                        <li><a class="page" href="/page=8" data-page="7">8</a></li>
+                        <li><a class="page" href="/page=9" data-page="8">9</a></li>
+                        <li><a class="page" href="/page=10" data-page="9">10</a></li>
+                        <li><a class="page" href="/page=11" data-page="10">11</a></li>
+                        <li><a class="page" href="/page=12" data-page="11">12</a></li>
+                        <li><a class="page" href="/page=13" data-page="12">13</a></li>
+                        <li><a class="page" href="/page=14" data-page="13">14</a></li>
+                        <li><a class="page" href="/page=15" data-page="14">15</a></li>
+                        <li><a class="next" href="/page=2" data-page="1">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <div class="cart-overlay">
+        <section class="cart">
+            <h2>Giỏ hàng</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">Tổng tiền: <span>0</span><sup>VNĐ</sup></p>
+                </div>
+            </form>
+        </section>
+        <div class="close-cart">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <button style="font-weight: bold;" class="checkout-btn">Thanh toán</button>
+    </div>
+
+    <script src="~/js/cart.js"></script>
+
+</body>
+</html>
